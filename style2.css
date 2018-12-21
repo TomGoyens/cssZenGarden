@@ -1,0 +1,71 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1{
+  margin: 2em 0;
+}
+h2{
+  margin: 1.5em 0;
+}
+h3{
+  margin: 1.5em 0;
+}
+
+.page-wrapper{
+  display: grid;
+  grid-template: 500px auto / 1fr 1fr 1fr 1fr;
+}
+
+.intro{
+  grid-area: 1 / 1 / span 1 / span 4;
+  text-align: center;
+  margin: 0 2.5vw;
+}
+
+.supporting{
+  grid-area: 2 / 2 / span 1 / span 3;
+  display: grid;
+  grid-template: auto auto 4em / 1fr 1fr;
+  text-align: justify;
+}
+
+    .explanation{
+      grid-area: 1 / 1;
+      padding: 0 10px 0 30px;
+    }
+    .participation{
+      grid-area: 1 / 2;
+      padding: 0 30px 0 10px
+    }
+    .benefits{
+      grid-area: 2 / 1;
+      padding: 0 10px 0 30px;
+    }
+    .requirements{
+      grid-area: 2 / 2;
+      padding: 0 30px 0 10px;
+    }
+
+    footer{
+      grid-area: 3 / 1 / span 1 / span 2;
+      text-align: center;
+      background: #999;
+      padding: 1.5em;
+    }
+    footer a{
+      padding: 1em 2em;
+    }
+
+
+
+.sidebar{
+  grid-area: 2 / 1 / span 1 / span 1;
+  background: #eee;
+  padding: 0 15px;
+}
+.sidebar li {
+  padding: 12px;
+  border-bottom: #000 solid 1px;
+}
