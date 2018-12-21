@@ -1,0 +1,242 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h3{
+  margin-bottom: 1em;
+}
+
+a{
+  color: #FF851B;
+}
+
+#css-zen-garden{
+  color: #fff;
+  text-align: justify;
+  overflow-x: hidden;
+  /*adjust font family n stuff*/
+}
+
+#zen-intro{
+  background-image: url("assets/img/Artsy3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
+  position: relative;
+}
+#zen-intro header {
+  position:absolute;
+  top: 40%;
+  left: 10%;
+}
+#zen-intro header h1{
+  margin-bottom: 1em;
+}
+
+#zen-intro::after{
+  content: "";
+  background-image: url("assets/img/Artsy2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vw;
+  width: 100%;
+  position: absolute;
+  bottom: -80vh;
+}
+
+#zen-summary{
+  position: absolute;
+  top: 70%;
+  margin: 0 1em;
+  text-align: justify;
+}
+
+#zen-summary a{
+  color: red;
+}
+
+#zen-summary a:hover{
+  color: pink;
+}
+
+#zen-preamble{
+  position: absolute;
+  top: 100%;
+  height: 40vh;
+  text-shadow: none;
+  margin: 1em;
+  color: #fff;
+}
+
+#zen-supporting::before{
+  content: "";
+  position: absolute;
+  top: -80vh;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(#000, #001f3f);
+  z-index: -10;
+}
+
+#zen-supporting{
+  background-image: linear-gradient(#001f3f,#0074D9);
+  margin-top: 80vh;
+  position: relative;
+}
+
+#zen-explanation{
+  padding: 1em;
+}
+
+#zen-participation{
+  padding: 1em;
+  margin-top: 30vh;
+  position: relative;
+}
+
+#zen-participation::before{
+  content: "";
+  background-image: url("assets/img/Artsy1.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  top: -30vh;
+  left: 0;
+}
+
+#zen-benefits{
+  padding: 1em;
+  margin-top: 30vh;
+  position: relative;
+}
+
+#zen-benefits::before{
+  content: "";
+  background-image: url("assets/img/MeerMuizenNodig.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  top: -30vh;
+  left: 0;
+}
+
+#zen-requirements{
+  padding: 1em;
+  margin-top: 30vh;
+  position: relative;
+}
+
+#zen-requirements::before{
+  content: "";
+  background-image: url("assets/img/1920x1080-124416-miui-8-rainy-weather-background-minimal-hd.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  top: -30vh;
+  left: 0;
+}
+
+footer{
+  text-align: center;
+  padding: 1em;
+}
+
+footer a{
+  display: inline-block;
+  width: 30%;
+  padding: 0.5em 1em;
+  padding: 1em;
+  border: solid 1px #000;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.sidebar{
+  background-image: linear-gradient(#0074D9, #FF4136);
+}
+.sidebar li{
+  border: 1px solid #000;
+  box-shadow: inset 0 0 2px #000;
+  margin-top: 5px; /* Prevent double borders */
+  background-color: rgba(0,0,0, 0.5); /* Add a grey background color */
+  padding: 12px; /* Add some padding */
+}
+
+#design-selection{
+  padding: 1em;
+}
+#design-archives{
+  padding: 1em;
+}
+#zen-resources{
+  padding: 1em;
+}
+
+
+@media only screen and (min-width: 600px){
+
+  #zen-summary{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    width: 50%;
+    text-align: right;
+  }
+
+
+  #zen-intro header {
+    position:absolute;
+    top: 60%;
+    left: 10%;
+  }
+
+  #zen-supporting{
+    width: 70vw;
+  }
+
+  #zen-participation::before{
+    width: 100vw;
+  }
+  #zen-benefits::before{
+    width: 100vw;
+  }
+  #zen-requirements::before{
+    width: 100vw;
+  }
+
+  .sidebar{
+    position: absolute;
+    top: 162vh;
+    right: 2vw;
+    width: 25vw;
+    box-shadow: 0 0 5px #000;
+    background-image: linear-gradient(#FF4136, #FFDC00);
+  }
+  .sidebar li{
+    border: 1px solid #000;
+    box-shadow: inset 0 0 2px #000;
+    margin-top: 5px; /* Prevent double borders */
+    background-color: #fff; /* Add a grey background color */
+    padding: 12px; /* Add some padding */
+  }
+
+
+  footer a{
+    display: inline-block;
+  }
+}
