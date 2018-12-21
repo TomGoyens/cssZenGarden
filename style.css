@@ -44,10 +44,12 @@ a{
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vw;
+  height: 30vh;
+  overflow: hidden;
   width: 100%;
   position: absolute;
   bottom: -80vh;
+  z-index: -5;
 }
 
 #zen-summary{
@@ -68,27 +70,17 @@ a{
 #zen-preamble{
   position: absolute;
   top: 100%;
-  height: 40vh;
-  text-shadow: none;
-  margin: 1em;
-  color: #fff;
-}
-
-#zen-supporting::before{
-  content: "";
-  position: absolute;
-  top: -80vh;
   left: 0;
-  height: 80vh;
-  width: 100%;
+  height: 60vh;
+  text-shadow: none;
+  padding: 1em;
+  color: #fff;
   background-image: linear-gradient(#000, #001f3f);
-  z-index: -10;
 }
 
 #zen-supporting{
   background-image: linear-gradient(#001f3f,#0074D9);
   margin-top: 80vh;
-  position: relative;
 }
 
 #zen-explanation{
@@ -205,8 +197,22 @@ footer a{
     left: 10%;
   }
 
-  #zen-supporting{
-    width: 70vw;
+  #zen-preamble{
+    height: 30vh;
+  }
+
+  #zen-intro::after{
+    height: 50vh;
+  }
+
+  #zen-explanation{
+    width: 65vw;
+  }
+  #zen-participation{
+    width: 65vw;
+  }
+  #zen-benefits{
+    width: 65vw;
   }
 
   #zen-participation::before{
@@ -233,10 +239,5 @@ footer a{
     margin-top: 5px; /* Prevent double borders */
     background-color: #fff; /* Add a grey background color */
     padding: 12px; /* Add some padding */
-  }
-
-
-  footer a{
-    display: inline-block;
   }
 }
